@@ -1,33 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'/>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
-  <title>Document</title>
-  <script src='js/index.js'></script>
-  <link rel='stylesheet' href='index.css'/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>GitHub Search</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="js/index.js" defer></script>
 </head>
 <body>
-  <div id='main'>
-
+  <div class="container">
     <h2>GitHub Search</h2>
 
-    <form id='github-form'>
-      <input id='search' type='text' name='search'>
-      <input type='submit' name='submit'/>
+    <form id="github-form">
+      <input id="search" type="text" name="search" placeholder="Enter username..." />
+      <input type="submit" value="Search" />
     </form>
 
-    <div id='github-container'>
-      <ul id='user-list'>
-
-      </ul>
-
-      <ul id='repos-list'>
-
-      </ul>
+    <div id="github-container">
+      <ul id="user-list"></ul>
+      <ul id="repos-list"></ul>
     </div>
-
   </div>
-
 </body>
 </html>
